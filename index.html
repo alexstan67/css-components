@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <title>🎨 Components</title>
+</head>
+<body>
+  <style>
+    body {
+      font-family: "ubuntu", "Helvetica", "sans-serif";
+      color: #6c757d;
+      font-size: 16px;
+    }
+    h1 {
+      color: #212529;
+      text-decoration: underline;
+    }
+    h2 {
+      color: #6c757d; 
+    }
+    .container {
+      margin-left: 10px;
+    }
+  </style>
+  <h1>CSS Components</h1>
+  <div class="container">
+
+    <h2>Buttons</h2>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-secondary">Secondary</button>
+    <button class="btn btn-success">Success</button>
+    <button class="btn btn-danger">Danger</button>
+    <button class="btn btn-warning">Warning</button>
+    <button class="btn btn-info">Info</button>
+    <button class="btn btn-light">Light</button>
+    <button class="btn btn-dark">Dark</button>
+    <hr style="color: lightgray;">
+
+    <h2>Dropdown</h2>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropbtn">Menu ▼</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <div class="dropdown-divider"></div>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <p class="dropbtn">menu 1 ▼</p>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <div class="dropdown-divider"></div>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <p class="dropbtn">menu 2 ▼</p>
+      <div class="dropdown-content">
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>  
+        <a href="#">Link 6</a>
+      </div>
+    </div>
+    <hr style="color: lightgray;">
+
+    <h2>Navs</h2>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+      <li class="nav-item">
+        <div class="dropdown">
+          <p class="dropbtn">Menu 1 ▼</p>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <div class="dropdown-divider"></div>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+    </li>
+    </ul>
+    <hr style="color: lightgray;">
+
+    <h2>Avatars</h2>
+    <img src="assets/user1.png" alt="user1" class="avatar-small">
+    <img src="assets/user1.png" alt="user1" class="avatar-medium">
+    <img src="assets/user1.png" alt="user1" class="avatar-large">
+    <hr style="color: lightgray;">
+
+    <h2>Navbar - Light</h2>
+    <nav class="navbar-container light">
+      <div class="navbar-left">
+        <div>
+          <img src="assets/user1.png" alt="user1" class="avatar-medium">
+        </div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <p class="dropbtn">Menu 1 ▼</p>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <div class="dropdown-divider"></div>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+        </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <button class="btn btn-secondary">Sign In</button>
+        <button class="btn btn-primary">Sign Up</button>
+      </div>
+    </nav>
+
+    <h2>Navbar - Dark</h2>
+    <nav class="navbar-container dark">
+      <div class="navbar-left">
+        <div>
+          <img src="assets/user1.png" alt="user1" class="avatar-medium">
+        </div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <p class="dropbtn">Menu 1 ▼</p>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <div class="dropdown-divider"></div>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+        </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <button class="btn btn-secondary">Sign In</button>
+        <button class="btn btn-primary">Sign Up</button>
+      </div>
+    </nav>
+    <hr style="color: lightgray;">
+
+    <h2>Cards - Category</h2>
+    <div class="card-category" style="width: 300px; height: 200px;">
+      <style>
+        .card-category {
+          background: url('assets/rod-long-ehQSoPmnHcw-unsplash.jpg');
+          background-size: cover;
+        }
+      </style>
+      <h2 class="card-category-title">Breakfast</h2>
+    </div>
+
+    <h2>Cards - Product</h2>
+    <div class="card-product" style="width: 500px; height: 175px;">
+      <div class="card-product-left" >
+        <img src="assets/rod-long-ehQSoPmnHcw-unsplash.jpg" class="card-product-img" width="175">
+      </div>
+      <div class="card-product-desc">
+        <h2 class="card-product-title">Product</h2>
+        <p>The dimension are 30cm x 20cm<br>
+        The weight is 10Kg<br>
+        Available next month</p>
+        </div>
+    </div>
+
+    <h2>Cards - Trip</h2>
+    <div class="card-trip" style="width: 400px; height: 300px;">
+      <div class="card-trip-top">
+        <img src="assets/rod-long-ehQSoPmnHcw-unsplash.jpg" class="card-trip-img" width="400">
+      </div>
+      <div class="card-trip-down">
+        <div class="card-trip-desc">
+          <h2 class="card-trip-title">Trip to Amsterdam</h2>
+          <div class="card-trip-text">
+            <p>Discover the capital of Netherlands!</p>
+          </div>
+        </div>
+        <div class="card-trip-price" id="card-trip-price">
+          <p>100 EUR</p>
+        </div>
+      </div>
+    </div>
+    
+    <h2>Cards - Trip - Button</h2>
+    <div class="card-trip" style="width: 400px; height: 300px;">
+      <div class="card-trip-top">
+        <img src="assets/rod-long-ehQSoPmnHcw-unsplash.jpg" class="card-trip-img" width="400">
+      </div>
+      <div class="card-trip-down">
+        <div class="card-trip-desc">
+          <h2 class="card-trip-title">Trip to Amsterdam</h2>
+          <div class="card-trip-text">
+            <p>Discover the capital of Netherlands!</p>
+          </div>
+        </div>
+        <div class="card-trip-price card-trip-button" id="card-trip-price">
+          <button class="btn btn-primary">Book</button>
+          <p>100 EUR</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="javascript/dropdown.js"></script>
+</body>
+</html>
