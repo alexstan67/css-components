@@ -1,6 +1,6 @@
 .btn {
   padding: 10px 16px;
-  border-radius: 7px;
+  border-radius: $border-radius;
   text-align: center;
   font-size: 16px;
 }
@@ -12,8 +12,8 @@
 .btn-primary {
   color: $light;
   text-decoration: none;
-  background-color: $success;
-  border: 1px solid $success;
+  background-color: $primary;
+  border: 1px solid $primary;
   transition: 0.25s;
 }
 
