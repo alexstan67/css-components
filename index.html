@@ -272,6 +272,68 @@
      <div class="alerts alert-success">
         <p>The user is already logged in!</p>
      </div>
+
+     <h3>Forms</h3>
+     <div class="forms-container forms-light">
+     <h2 class="forms-title">Log in</h2>
+     <form data-turbo="false" class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="C561dP32vx9Jvx2XdqH9I9Pb3Bl6jirDRpb76h-ici9UQuq-iLnUYm97jxqvZl8KXEcOIVgI_t0GJ0Vy4y1SAg" autocomplete="off" />
+       <div class="forms-element">
+         <label for="user_email">Email</label><br />
+         <input autofocus="autofocus" autocomplete="email" type="email" value="" name="user[email]" id="user_email" />
+       </div>
+
+       <div class="forms-element">
+         <label for="user_password">Password</label><br />
+         <input autocomplete="current-password" type="password" name="user[password]" id="user_password" />
+       </div>
+
+       <div class="forms-element">
+         <input name="user[remember_me]" type="hidden" value="0" autocomplete="off" /><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me" />
+         <label for="user_remember_me">Remember me</label>
+       </div>
+
+       <div class="forms-submit">
+         <input type="submit" name="commit" value="Log in" class="btn btn-primary" data-disable-with="Log in" />
+         </div>
+     </form>
+       <div class="forms-links">
+         <a href="/users/sign_up">Sign up</a><br />
+         <a href="/users/password/new">Forgot your password?</a><br />
+         <a href="/users/confirmation/new">Didn&#39;t receive confirmation instructions?</a><br />
+         <a href="/users/unlock/new">Didn&#39;t receive unlock instructions?</a><br />
+       </div>
+     </div>
+
+     <div class="forms-container forms-dark">
+     <h2 class="forms-title">Log in</h2>
+     <form data-turbo="false" class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="C561dP32vx9Jvx2XdqH9I9Pb3Bl6jirDRpb76h-ici9UQuq-iLnUYm97jxqvZl8KXEcOIVgI_t0GJ0Vy4y1SAg" autocomplete="off" />
+       <div class="forms-element">
+         <label for="user_email">Email</label><br />
+         <input autofocus="autofocus" autocomplete="email" type="email" value="" name="user[email]" id="user_email" />
+       </div>
+
+       <div class="forms-element">
+         <label for="user_password">Password</label><br />
+         <input autocomplete="current-password" type="password" name="user[password]" id="user_password" />
+       </div>
+
+       <div class="forms-element">
+         <input name="user[remember_me]" type="hidden" value="0" autocomplete="off" /><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me" />
+         <label for="user_remember_me">Remember me</label>
+       </div>
+
+       <div class="forms-submit">
+         <input type="submit" name="commit" value="Log in" class="btn btn-primary" data-disable-with="Log in" />
+         </div>
+     </form>
+       <div class="forms-links">
+         <a href="/users/sign_up">Sign up</a><br />
+         <a href="/users/password/new">Forgot your password?</a><br />
+         <a href="/users/confirmation/new">Didn&#39;t receive confirmation instructions?</a><br />
+         <a href="/users/unlock/new">Didn&#39;t receive unlock instructions?</a><br />
+       </div>
+     </div>
+  
   </div>
 
   <script src="javascript/dropdown.js"></script>
