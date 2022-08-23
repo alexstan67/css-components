@@ -1,0 +1,24 @@
+.text-color-primary {
+  color: #0d6efd;
+}
+.text-color-secondary {
+  color: #6c757d;
+}
+.text-color-success {
+  color: #198754;
+}
+.text-color-danger {
+  color: #dc3545;
+}
+.text-color-warning {
+  color: #ffc107;
+}
+.text-color-info {
+  color: #0dcaf0;
+}
+.text-color-light {
+  color: #f8f9fa;
+}
+.text-color-dark {
+  color: #212529;
+}
