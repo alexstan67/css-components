@@ -7,18 +7,13 @@
   align-items: center;
 }
 
-.light {
+.nb-light {
   background-color: $light;
   color: $secondary;
 }
 
-.dark {
+.nb-dark {
   background-color: $dark;
-}
-
-.navbar-left {
-  display: flex;
-  align-items: center;
 }
 
 .sticky {
