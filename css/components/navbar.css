@@ -7,18 +7,13 @@
   align-items: center;
 }
 
-.light {
+.nb-light {
   background-color: #f8f9fa;
   color: #6c757d;
 }
 
-.dark {
+.nb-dark {
   background-color: #212529;
-}
-
-.navbar-left {
-  display: flex;
-  align-items: center;
 }
 
 .sticky {

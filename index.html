@@ -127,11 +127,11 @@
      <hr style="color: lightgray;">
 
      <h3>Navbar - Light</h3>
-     <nav class="navbar-container light">
-       <div class="navbar-left">
+     <nav class="navbar-container nb-light">
+       <div class="d-flex align-items-center">
          <img src="assets/user1.png" alt="user1" class="avatar-medium">
          <span class="text-dark">Welcome Alex</span>
-         <ul class="nav">
+         <ul class="nav d-flex align-items-center">
            <li class="nav-item">
              <a class="nav-link active" aria-current="page" href="#">Active</a>
            </li>
@@ -164,11 +164,11 @@
      </nav>
 
      <h3>Navbar - Dark</h3>
-     <nav class="navbar-container dark">
-       <div class="navbar-left">
+     <nav class="navbar-container nb-dark">
+       <div class="d-flex align-items-center">
          <img src="assets/user1.png" alt="user1" class="avatar-medium">
          <span class="text-light">Welcome Alex</span>
-         <ul class="nav">
+         <ul class="nav d-flex align-items-center">
            <li class="nav-item">
              <a class="nav-link active" aria-current="page" href="#">Active</a>
            </li>
@@ -292,7 +292,58 @@
      <span class="tag tag-info">info</span>
      <span class="tag tag-light">light</span>
      <span class="tag tag-dark">dark</span>
-     
+    
+     <h3>Flex</h3>
+     <div class="d-flex justify-content-start" style="background-color: lightgray;border: solid 1px;">
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">justify-content-start</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">justify-content-start</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">justify-content-start</div>
+     </div>
+     <div class="d-flex justify-content-center" style="background-color: lightgray;border: solid 1px;">
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">justify-content-center</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">justify-content-center</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">justify-content-center</div>
+     </div>
+     <div class="d-flex justify-content-end" style="background-color: lightgray;border: solid 1px;">
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">justify-content-end</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">justify-content-end</div>
+     </div>
+     <div class="d-flex justify-content-around" style="background-color: lightgray;border: solid 1px;">
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">justify-content-around</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">justify-content-around</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">justify-content-around</div>
+     </div>
+     <div class="d-flex justify-content-evenly" style="background-color: lightgray; border: solid 1px;">
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">justify-content-evenly</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">justify-content-evenly</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">justify-content-evenly</div>
+     </div>
+     <div class="d-flex align-items-start" style="background-color: lightgray; border: solid 1px;height: 50px">
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">align-items-start</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">align-items-start</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">align-items-start</div>
+     </div>
+     <div class="d-flex align-items-end" style="background-color: lightgray; border: solid 1px;height: 50px">
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">align-items-end</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">align-items-end</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">align-items-end</div>
+     </div>
+     <div class="d-flex align-items-center" style="background-color: lightgray; border: solid 1px;height: 50px">
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">align-items-center</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">align-items-center</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">align-items-center</div>
+     </div>
+     <div class="d-flex align-items-baseline" style="background-color: lightgray; border: solid 1px;height: 50px">
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">align-items-baseline</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">align-items-baseline</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">align-items-baseline</div>
+     </div>
+     <div class="d-flex align-items-stretch" style="background-color: lightgray; border: solid 1px;height: 50px">
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">align-items-stretch</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">align-items-stretch</div>
+      <div class="p-5" style="background-color: #0dcaf0;border: dashed 1px;">align-items-stretch</div>
+     </div>
+
      <h3>Forms</h3>
      <div class="forms-container forms-light">
      <h2 class="forms-title">Log in</h2>
