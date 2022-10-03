@@ -1,24 +1,24 @@
 .text-color-primary {
-  color: #0d6efd;
+  color: var(--primary);
 }
 .text-color-secondary {
-  color: #6c757d;
+  color: var(--secondary);
 }
 .text-color-success {
-  color: #198754;
+  color: var(--success);
 }
 .text-color-danger {
-  color: #dc3545;
+  color: var(--danger);
 }
 .text-color-warning {
-  color: #ffc107;
+  color: var(--warning);
 }
 .text-color-info {
-  color: #0dcaf0;
+  color: var(--info);
 }
 .text-color-light {
-  color: #f8f9fa;
+  color: var(--light);
 }
 .text-color-dark {
-  color: #212529;
+  color: var(--dark);
 }

@@ -1,6 +1,5 @@
 .forms-container {
   width: fit-content;
-  margin: 20px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -10,36 +9,36 @@
 }
 
 .forms-light {
-  background-color: #f8f9fa;
-  border: 1px solid #6c757d;
+  background-color: var(--light);
+  border: 1px solid var(--secondary);
 }
 .forms-light h2 {
-  color: #212529;
+  color: var(--dark);
 }
 
 .forms-light label {
-  color: #212529;
+  color: var(--dark);
 }
 
 .forms-light em {
-  color: #212529;
+  color: var(--dark);
 }
 
 .forms-dark {
-  background-color: #212529;
-  border: 1px solid #6c757d;
+  background-color: var(--dark);
+  border: 1px solid var(--secondary);
 }
 
 .forms-dark h2 {
-  color: #f8f9fa;
+  color: var(--light);
 }
 
 .forms-dark label {
-  color: #f8f9fa;
+  color: var(--light);
 }
 
 .forms-dark em {
-  color: #f8f9fa;
+  color: var(--light);
 }
 
 .forms-element {
@@ -53,12 +52,12 @@
   padding: 5px;
   border: 1px solid #6c757d;
   box-shadow: none;
-  background-color: #f8f9fa;
+  background-color: var(--light);
   outline: none;
   border-radius: 7px;
 }
 .forms-element input:focus {
-   border: 3px solid #0dcaf0;
+   border: 3px solid var(--info);
    box-shadow: none;
    outline: none;
 }
@@ -75,6 +74,6 @@
   text-align: center;
 }
 .forms-links a {
-  color: #0dcaf0;
+  color: var(--info);
   text-decoration: none;
 }

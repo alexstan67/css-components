@@ -3,12 +3,12 @@
   transition: 0.25s;
   font-size: 16px;
   cursor: pointer;
-  width:fit-content;
+  width: fit-content;
 }
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-  color: #0d6efd;
+  color: var(--light);
   transition: 0.25s;
 }
 
@@ -23,8 +23,8 @@
   display: none;
   position: absolute;
   top: 40px;
-  border: solid 1px #d2d2d2;
-  background-color: white;
+  border: solid 1px var(--secondary);
+  background-color: var(--light);
   border-radius: 5px;
   min-width: 160px;
   box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.15);
@@ -33,7 +33,7 @@
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color:#6c757d;
+  color: var(--secondary);
   padding: 8px 16px;
   text-decoration: none;
   display: block;
@@ -41,17 +41,17 @@
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #0d6efd;
-  color:white;
+  background-color: var(--primary);
+  color: var(--light);
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
-  display:block;
+  display: block;
 }
 
 .dropdown-divider {
   height: 1px;
-  background: #d2d2d2;
+  background: var(--secondary);
   margin: 0px 15px;
 }

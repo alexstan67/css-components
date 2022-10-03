@@ -11,12 +11,12 @@
   align-items: center;
 }
 .nb-light {
-  background-color: #f8f9fa;
-  color: #6c757d;
+  background-color: var(--light);
+  color: var(--secondary);
 }
 
 .nb-dark {
-  background-color: #212529;
+  background-color: var(--dark);
 }
 
 .sticky {
