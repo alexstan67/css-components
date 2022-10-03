@@ -9,6 +9,24 @@
 </head>
 <body>
   <style>
+    :root {
+      --primary: #0d6efd;
+      --primary_bis: #0b5ed7;
+      --secondary: #6c757d;
+      --secondary_bis: #5c636a;
+      --success: #198754;
+      --success_bis: #157347;
+      --danger: #dc3545;
+      --danger_bis: #bb2d3b;
+      --warning: #ffc107;
+      --warning_bis: #ffca2c;
+      --info: #0dcaf0;
+      --info_bis: #31d2f2;
+      --light: #f8f9fa;
+      --light_bis: #f8f9fa;
+      --dark: #212529;
+      --dark_bis: #212529;
+    }
     body {
       font-family: "ubuntu", "Helvetica", "sans-serif";
       font-weight: 400;
@@ -18,7 +36,7 @@
       padding: 0px;
     }
     h1 {
-      color: #212529;
+      color: var(--dark-color);
       text-decoration: none;
       font-family: "Nunito","ubuntu","Helvetica";
       font-weight: 600;
@@ -357,7 +375,7 @@
      </div>
 
      <h3>Forms</h3>
-     <div class="forms-container forms-light">
+     <div class="forms-container forms-light m-15">
      <h2 class="forms-title">Log in</h2>
      <form data-turbo="false" class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="C561dP32vx9Jvx2XdqH9I9Pb3Bl6jirDRpb76h-ici9UQuq-iLnUYm97jxqvZl8KXEcOIVgI_t0GJ0Vy4y1SAg" autocomplete="off" />
        <div class="forms-element">
@@ -387,7 +405,7 @@
        </div>
      </div>
 
-     <div class="forms-container forms-dark">
+     <div class="forms-container forms-dark m-15">
      <h2 class="forms-title">Log in</h2>
      <form data-turbo="false" class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="C561dP32vx9Jvx2XdqH9I9Pb3Bl6jirDRpb76h-ici9UQuq-iLnUYm97jxqvZl8KXEcOIVgI_t0GJ0Vy4y1SAg" autocomplete="off" />
        <div class="forms-element">

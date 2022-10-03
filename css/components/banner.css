@@ -1,5 +1,5 @@
 .banner {
-  color: white;
+  color: var(--light);
   background: linear-gradient(135deg,
   rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 50%), url('https://unsplash.it/300/250?image=0');
   background-size: cover;
