@@ -31,7 +31,7 @@
       font-family: "ubuntu", "Helvetica", "sans-serif";
       font-weight: 400;
       font-size: 16px;
-      color: #6c757d;
+      color: var(--secondary);
       margin: 0px;
       padding: 0px;
     }
@@ -39,17 +39,25 @@
       color: var(--dark-color);
       text-decoration: none;
       font-family: "Nunito","ubuntu","Helvetica";
-      font-weight: 600;
-      font-size: 48px;
+      font-weight: 900;
+      font-size: 3em;
+    }
+    @media screen and (max-width: 375px) {
+      h1 {
+        font-family: "Nunito","ubuntu","Helvetica";
+        color: var(--dark-color);
+        font-weight: 700;
+        font-size: 2em;
+      }
     }
     h2 {
-      font-size: 32px;
+      font-size: 2em;
       font-weight: 500;
-      color: #6c757d; 
+      color: var(--secondary); 
     }
     h3 {
-      font-size: 24px;
-      color: #6c757d; 
+      font-size: 1.5em;
+      color: var(--secondary); 
       font-weight: 400;
     }
     .container {
