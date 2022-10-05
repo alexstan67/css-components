@@ -1,13 +1,17 @@
 .forms-container {
-  width: fit-content;
-  padding: 10px;
+  margin: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 7px;
   box-shadow: 5px 5px 5px;
 }
-
+@media only screen and (min-width: 450px) {
+  .forms-container {
+    width: 300px;
+    margin: 10%;
+  }
+}
 .forms-light {
   background-color: var(--light);
   border: 1px solid var(--secondary);
@@ -26,7 +30,6 @@
 
 .forms-dark {
   background-color: var(--dark);
-  border: 1px solid var(--secondary);
 }
 
 .forms-dark h2 {

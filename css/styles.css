@@ -1,5 +1,5 @@
 /* style.css */
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Ubuntu:wght@300;400;500;700&display=swap');
 
 /* --- Import Components stylesheets --- */
 @import url("components/button.css");
