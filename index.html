@@ -1,393 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css?v=1.0" />
+    <title>🎨 Components</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-  <title>🎨 Components</title>
-</head>
-
-<body>
-  <style>
-    :root {
-      --primary: #0d6efd;
-      --primary_bis: #0b5ed7;
-      --secondary: #6c757d;
-      --secondary_bis: #5c636a;
-      --success: #198754;
-      --success_bis: #157347;
-      --danger: #dc3545;
-      --danger_bis: #bb2d3b;
-      --warning: #ffc107;
-      --warning_bis: #ffca2c;
-      --info: #0dcaf0;
-      --info_bis: #31d2f2;
-      --light: #f8f9fa;
-      --light_bis: #f8f9fa;
-      --dark: #212529;
-      --dark_bis: #212529;
-    }
-
-    body {
-      font-family: "ubuntu", "Helvetica", "sans-serif";
-      font-weight: 400;
-      font-size: 16px;
-      color: var(--secondary);
-      margin: 0px;
-      padding: 0px;
-    }
-
-    h1 {
-      color: var(--dark-color);
-      text-decoration: none;
-      font-family: "Nunito", "ubuntu", "Helvetica";
-      font-weight: 900;
-      font-size: 3em;
-    }
-
-    @media screen and (max-width: 375px) {
-      h1 {
-        font-family: "Nunito", "ubuntu", "Helvetica";
-        color: var(--dark-color);
-        font-weight: 900;
-        font-size: 2em;
+  <body>
+    <style>
+      body {
+        font-family: "ubuntu", "Helvetica", "sans-serif";
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--secondary);
       }
-    }
 
-    h2 {
-      font-size: 2em;
-      font-weight: 400;
-      color: var(--secondary);
-    }
+      h1 {
+        color: var(--dark-color);
+        text-decoration: none;
+        font-family: "Nunito", "ubuntu", "Helvetica";
+        font-weight: 900;
+        font-size: 3em;
+      }
 
-    h3 {
-      font-size: 1.5em;
-      color: var(--secondary);
-      font-weight: 500;
-    }
-
-    .container {
-      margin-left: 10px;
-    }
-  </style>
-
-  <h1>My Stylesheet</h1>
-
-  <h2>Fonts</h2>
-  <div style="background-color: rgb(240,240,240); padding-left: 20px;">
-    <h1>h1 - Nunito - 48px</h1>
-    <h2>h2 - Ubuntu - 32px</h2>
-    <h3>h3 - Ubuntu - 24px</h3>
-    <p>p -Ubuntu - 16px</p>
-  </div>
-
-  <h2>CSS Components</h2>
-  <div class="container">
-
-    <h3>Buttons</h3>
-    <button class="btn btn-primary">Primary</button>
-    <button class="btn btn-secondary">Secondary</button>
-    <button class="btn btn-success">Success</button>
-    <button class="btn btn-danger">Danger</button>
-    <button class="btn btn-warning">Warning</button>
-    <button class="btn btn-info">Info</button>
-    <button class="btn btn-light">Light</button>
-    <button class="btn btn-dark">Dark</button>
-    <hr style="color: lightgray;">
-
-    <h3>Dropdown</h3>
-    <div class="dropdown">
-      <button class="btn btn-secondary dropbtn">Menu ▼</button>
-      <div class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <div class="dropdown-divider"></div>
-        <a href="#">Link 3</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <p class="dropbtn">menu 1 ▼</p>
-      <div class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <div class="dropdown-divider"></div>
-        <a href="#">Link 3</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <p class="dropbtn">menu 2 ▼</p>
-      <div class="dropdown-content">
-        <a href="#">Link 4</a>
-        <a href="#">Link 5</a>
-        <a href="#">Link 6</a>
-      </div>
-    </div>
-    <hr style="color: lightgray;">
-
-    <h3>Navs</h3>
-    <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled">Disabled</a>
-      </li>
-      <li class="nav-item">
-        <div class="dropdown">
-          <p class="dropbtn">Menu 1 ▼</p>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <div class="dropdown-divider"></div>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-      </li>
-    </ul>
-    <hr style="color: lightgray;">
-
-    <h3>Avatars</h3>
-    <img src="assets/user1.png" alt="user1" class="avatar-small">
-    <img src="assets/user1.png" alt="user1" class="avatar-medium">
-    <img src="assets/user1.png" alt="user1" class="avatar-large">
-    <hr style="color: lightgray;">
-
-    <h3>Navbar - Light</h3>
-    <nav class="navbar-container nb-light">
-      <div class="navbar-left ml-5">
-        <img src="assets/user1.png" alt="user1" class="avatar-medium">
-        <div class="navbar-welcome text-dark ml-5">Welcome Alex</div>
-      </div>
-      <div class="navbar-right">
-        <div class="navbar-right-buttons">
-          <button class="btn btn-secondary">Sign In</button>
-          <button class="btn btn-primary">Sign Up</button>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn btn-burger-dark ml-5 mr-5">
-            <img src="assets/burger-dark.svg">
-          </button>
-          <div class="dropdown-content dropdown-list-right">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <div class="dropdown-divider"></div>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <h3>Navbar - Dark</h3>
-    <nav class="navbar-container nb-dark">
-      <div class="navbar-left ml-5">
-        <img src="assets/user1.png" alt="user1" class="avatar-medium">
-        <div class="navbar-welcome text-light ml-5">Welcome Alex</div>
-      </div>
-      <div class="navbar-right">
-        <div class="navbar-right-buttons">
-          <button class="btn btn-secondary">Sign In</button>
-          <button class="btn btn-primary">Sign Up</button>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn btn-burger-light ml-5 mr-5">
-            <img src="assets/burger-light.svg">
-          </button>
-          <div class="dropdown-content dropdown-list-right">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <div class="dropdown-divider"></div>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <hr style="color: lightgray;">
-
-    <h3>Cards - Category</h3>
-    <div class="card-category" style="width: 300px; height: 200px;">
-      <style>
-        .card-category {
-          background: url('assets/rod-long-ehQSoPmnHcw-unsplash.jpg');
-          background-size: cover;
+      @media screen and (max-width: 375px) {
+        h1 {
+          font-family: "Nunito", "ubuntu", "Helvetica";
+          color: var(--dark-color);
+          font-weight: 900;
+          font-size: 2em;
         }
-      </style>
-      <h2 class="card-category-title">Breakfast</h2>
+      }
+
+      h2 {
+        font-size: 2em;
+        font-weight: 400;
+        color: var(--secondary);
+      }
+
+      h3 {
+        font-size: 1.5em;
+        color: var(--secondary);
+        font-weight: 500;
+      }
+
+      .container {
+        margin-left: 10px;
+      }
+    </style>
+
+    <h1>My Stylesheet</h1>
+
+    <h2>Fonts</h2>
+    <div style="background-color: rgb(240, 240, 240); padding-left: 20px">
+      <h1>h1 - Nunito - 48px</h1>
+      <h2>h2 - Ubuntu - 32px</h2>
+      <h3>h3 - Ubuntu - 24px</h3>
+      <p>p -Ubuntu - 16px</p>
     </div>
 
-    <h3>Cards - Product</h3>
-    <div class="card-product" style="width: 500px; height: 175px;">
-      <div class="card-product-left">
-        <img src="assets/rod-long-ehQSoPmnHcw-unsplash.jpg" class="card-product-img" width="175">
-      </div>
-      <div class="card-product-desc">
-        <h2 class="card-product-title">Product</h2>
-        <p>The dimension are 30cm x 20cm<br>
-          The weight is 10Kg<br>
-          Available next month</p>
-      </div>
-    </div>
+    <h2>CSS Components</h2>
+    <div class="container">
+      <h3>Buttons</h3>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-light">Light</button>
+      <button class="btn btn-dark">Dark</button>
+      <hr style="color: lightgray" />
 
-    <h3>Cards - Trip</h3>
-    <div class="card-trip" style="width: 400px; height: 300px;">
-      <div class="card-trip-top">
-        <img src="assets/rod-long-ehQSoPmnHcw-unsplash.jpg" class="card-trip-img" width="400">
+      <h3>Dropdown</h3>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropbtn">Menu ▼</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <div class="dropdown-divider"></div>
+          <a href="#">Link 3</a>
+        </div>
       </div>
-      <div class="card-trip-down">
-        <div class="card-trip-desc">
-          <h2 class="card-trip-title">Trip to Amsterdam</h2>
-          <div class="card-trip-text">
-            <p>Discover the capital of Netherlands!</p>
+      <div class="dropdown">
+        <p class="dropbtn">menu 1 ▼</p>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <div class="dropdown-divider"></div>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <p class="dropbtn">menu 2 ▼</p>
+        <div class="dropdown-content">
+          <a href="#">Link 4</a>
+          <a href="#">Link 5</a>
+          <a href="#">Link 6</a>
+        </div>
+      </div>
+      <hr style="color: lightgray" />
+
+      <h3>Navs</h3>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <p class="dropbtn">Menu 1 ▼</p>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <div class="dropdown-divider"></div>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <hr style="color: lightgray" />
+
+      <h3>Avatars</h3>
+      <img src="assets/user1.png" alt="user1" class="avatar-small" />
+      <img src="assets/user1.png" alt="user1" class="avatar-medium" />
+      <img src="assets/user1.png" alt="user1" class="avatar-large" />
+      <hr style="color: lightgray" />
+
+      <h3>Navbar - Light</h3>
+      <nav class="navbar-container nb-light">
+        <div class="navbar-left ml-5">
+          <img src="assets/user1.png" alt="user1" class="avatar-medium" />
+          <div class="navbar-welcome text-dark ml-5">Welcome Alex</div>
+        </div>
+        <div class="navbar-right">
+          <div class="navbar-right-buttons">
+            <button class="btn btn-secondary">Sign In</button>
+            <button class="btn btn-primary">Sign Up</button>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn btn-burger-dark ml-5 mr-5">
+              <img src="assets/burger-dark.svg" />
+            </button>
+            <div class="dropdown-content dropdown-list-right">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <div class="dropdown-divider"></div>
+              <a href="#">Link 3</a>
+            </div>
           </div>
         </div>
-        <div class="card-trip-price" id="card-trip-price">
-          <p>100 EUR</p>
-        </div>
-      </div>
-    </div>
+      </nav>
 
-    <h3>Cards - Trip - Button</h3>
-    <div class="card-trip" style="width: 400px; height: 300px;">
-      <div class="card-trip-top">
-        <img src="assets/rod-long-ehQSoPmnHcw-unsplash.jpg" class="card-trip-img" width="400">
-      </div>
-      <div class="card-trip-down">
-        <div class="card-trip-desc">
-          <h2 class="card-trip-title">Trip to Amsterdam</h2>
-          <div class="card-trip-text">
-            <p>Discover the capital of Netherlands!</p>
+      <h3>Navbar - Dark</h3>
+      <nav class="navbar-container nb-dark">
+        <div class="navbar-left ml-5">
+          <img src="assets/user1.png" alt="user1" class="avatar-medium" />
+          <div class="navbar-welcome text-light ml-5">Welcome Alex</div>
+        </div>
+        <div class="navbar-right">
+          <div class="navbar-right-buttons">
+            <button class="btn btn-secondary">Sign In</button>
+            <button class="btn btn-primary">Sign Up</button>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn btn-burger-light ml-5 mr-5">
+              <img src="assets/burger-light.svg" />
+            </button>
+            <div class="dropdown-content dropdown-list-right">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <div class="dropdown-divider"></div>
+              <a href="#">Link 3</a>
+            </div>
           </div>
         </div>
-        <div class="card-trip-price card-trip-button" id="card-trip-price">
-          <button class="btn btn-primary">Book</button>
-          <p>100 EUR</p>
+      </nav>
+
+      <hr style="color: lightgray" />
+
+      <h3>Cards - Category</h3>
+      <div class="card-category" style="width: 300px; height: 200px">
+        <style>
+          .card-category {
+            background: url("assets/rod-long-ehQSoPmnHcw-unsplash.jpg");
+            background-size: cover;
+          }
+        </style>
+        <h2 class="card-category-title">Breakfast</h2>
+      </div>
+
+      <h3>Cards - Product</h3>
+      <div class="card-product" style="width: 500px; height: 175px">
+        <div class="card-product-left">
+          <img
+            src="assets/rod-long-ehQSoPmnHcw-unsplash.jpg"
+            class="card-product-img"
+            width="175"
+          />
+        </div>
+        <div class="card-product-desc">
+          <h2 class="card-product-title">Product</h2>
+          <p>
+            The dimension are 30cm x 20cm<br />
+            The weight is 10Kg<br />
+            Available next month
+          </p>
+        </div>
+      </div>
+
+      <h3>Cards - Trip</h3>
+      <div class="card-trip" style="width: 400px; height: 300px">
+        <div class="card-trip-top">
+          <img
+            src="assets/rod-long-ehQSoPmnHcw-unsplash.jpg"
+            class="card-trip-img"
+            width="400"
+          />
+        </div>
+        <div class="card-trip-down">
+          <div class="card-trip-desc">
+            <h2 class="card-trip-title">Trip to Amsterdam</h2>
+            <div class="card-trip-text">
+              <p>Discover the capital of Netherlands!</p>
+            </div>
+          </div>
+          <div class="card-trip-price" id="card-trip-price">
+            <p>100 EUR</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Cards - Trip - Button</h3>
+      <div class="card-trip" style="width: 400px; height: 300px">
+        <div class="card-trip-top">
+          <img
+            src="assets/rod-long-ehQSoPmnHcw-unsplash.jpg"
+            class="card-trip-img"
+            width="400"
+          />
+        </div>
+        <div class="card-trip-down">
+          <div class="card-trip-desc">
+            <h2 class="card-trip-title">Trip to Amsterdam</h2>
+            <div class="card-trip-text">
+              <p>Discover the capital of Netherlands!</p>
+            </div>
+          </div>
+          <div class="card-trip-price card-trip-button" id="card-trip-price">
+            <button class="btn btn-primary">Book</button>
+            <p>100 EUR</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Alerts</h3>
+      <div class="alerts alert-danger">
+        <p>The user is already logged in!</p>
+      </div>
+      <div class="alerts alert-info">
+        <p>The user is already logged in!</p>
+      </div>
+      <div class="alerts alert-success">
+        <p>The user is already logged in!</p>
+      </div>
+
+      <h3>Text colors</h3>
+      <span class="text-color-primary">primary</span>
+      <span class="text-color-secondary">secondary</span>
+      <span class="text-color-success">success</span>
+      <span class="text-color-danger">danger</span>
+      <span class="text-color-warning">warning</span>
+      <span class="text-color-info">info</span>
+      <span class="text-color-light">light</span>
+      <span class="text-color-dark">dark</span>
+
+      <h3>Tags</h3>
+      <div class="mb-15">
+        <span class="tag tag-primary">primary</span>
+        <span class="tag tag-secondary">secondary</span>
+        <span class="tag tag-success">success</span>
+        <span class="tag tag-danger">danger</span>
+        <span class="tag tag-warning">warning</span>
+        <span class="tag tag-info">info</span>
+        <span class="tag tag-light">light</span>
+        <span class="tag tag-dark">dark</span>
+      </div>
+      <div>
+        <span class="tag tag-outline-primary">primary</span>
+        <span class="tag tag-outline-secondary">secondary</span>
+        <span class="tag tag-outline-success">success</span>
+        <span class="tag tag-outline-danger">danger</span>
+        <span class="tag tag-outline-warning">warning</span>
+        <span class="tag tag-outline-info">info</span>
+        <span class="tag tag-outline-light">light</span>
+        <span class="tag tag-outline-dark">dark</span>
+      </div>
+
+      <h3>Forms</h3>
+      <div class="forms-container forms-light m-15">
+        <h2 class="forms-title">Log in</h2>
+        <form
+          data-turbo="false"
+          class="new_user"
+          id="new_user"
+          action="/users/sign_in"
+          accept-charset="UTF-8"
+          method="post"
+        >
+          <input
+            type="hidden"
+            name="authenticity_token"
+            value="C561dP32vx9Jvx2XdqH9I9Pb3Bl6jirDRpb76h-ici9UQuq-iLnUYm97jxqvZl8KXEcOIVgI_t0GJ0Vy4y1SAg"
+            autocomplete="off"
+          />
+          <div class="forms-element">
+            <label for="user_email">Email</label><br />
+            <input
+              autofocus="autofocus"
+              autocomplete="email"
+              type="email"
+              value=""
+              name="user[email]"
+              id="user_email"
+            />
+          </div>
+
+          <div class="forms-element">
+            <label for="user_password">Password</label><br />
+            <input
+              autocomplete="current-password"
+              type="password"
+              name="user[password]"
+              id="user_password"
+            />
+          </div>
+
+          <div class="forms-element">
+            <input
+              name="user[remember_me]"
+              type="hidden"
+              value="0"
+              autocomplete="off"
+            /><input
+              type="checkbox"
+              value="1"
+              name="user[remember_me]"
+              id="user_remember_me"
+            />
+            <label for="user_remember_me">Remember me</label>
+          </div>
+
+          <div class="forms-submit">
+            <input
+              type="submit"
+              name="commit"
+              value="Log in"
+              class="btn btn-primary"
+              data-disable-with="Log in"
+            />
+          </div>
+        </form>
+        <div class="forms-links">
+          <a href="/users/sign_up">Sign up</a><br />
+          <a href="/users/password/new">Forgot your password?</a><br />
+          <a href="/users/confirmation/new"
+            >Didn&#39;t receive confirmation instructions?</a
+          ><br />
+          <a href="/users/unlock/new">Didn&#39;t receive unlock instructions?</a
+          ><br />
+        </div>
+      </div>
+
+      <div class="forms-container forms-dark m-15">
+        <h2 class="forms-title">Log in</h2>
+        <form
+          data-turbo="false"
+          class="new_user"
+          id="new_user"
+          action="/users/sign_in"
+          accept-charset="UTF-8"
+          method="post"
+        >
+          <input
+            type="hidden"
+            name="authenticity_token"
+            value="C561dP32vx9Jvx2XdqH9I9Pb3Bl6jirDRpb76h-ici9UQuq-iLnUYm97jxqvZl8KXEcOIVgI_t0GJ0Vy4y1SAg"
+            autocomplete="off"
+          />
+          <div class="forms-element">
+            <label for="user_email">Email</label><br />
+            <input
+              autofocus="autofocus"
+              autocomplete="email"
+              type="email"
+              value=""
+              name="user[email]"
+              id="user_email"
+            />
+          </div>
+
+          <div class="forms-element">
+            <label for="user_password">Password</label><br />
+            <input
+              autocomplete="current-password"
+              type="password"
+              name="user[password]"
+              id="user_password"
+            />
+          </div>
+
+          <div class="forms-element">
+            <input
+              name="user[remember_me]"
+              type="hidden"
+              value="0"
+              autocomplete="off"
+            /><input
+              type="checkbox"
+              value="1"
+              name="user[remember_me]"
+              id="user_remember_me"
+            />
+            <label for="user_remember_me">Remember me</label>
+          </div>
+
+          <div class="forms-submit">
+            <input
+              type="submit"
+              name="commit"
+              value="Log in"
+              class="btn btn-primary"
+              data-disable-with="Log in"
+            />
+          </div>
+        </form>
+        <div class="forms-links">
+          <a href="/users/sign_up">Sign up</a><br />
+          <a href="/users/password/new">Forgot your password?</a><br />
+          <a href="/users/confirmation/new"
+            >Didn&#39;t receive confirmation instructions?</a
+          ><br />
+          <a href="/users/unlock/new">Didn&#39;t receive unlock instructions?</a
+          ><br />
         </div>
       </div>
     </div>
 
-    <h3>Alerts</h3>
-    <div class="alerts alert-danger">
-      <p>The user is already logged in!</p>
-    </div>
-    <div class="alerts alert-info">
-      <p>The user is already logged in!</p>
-    </div>
-    <div class="alerts alert-success">
-      <p>The user is already logged in!</p>
-    </div>
-
-    <h3>Text colors</h3>
-    <span class="text-color-primary">primary</span>
-    <span class="text-color-secondary">secondary</span>
-    <span class="text-color-success">success</span>
-    <span class="text-color-danger">danger</span>
-    <span class="text-color-warning">warning</span>
-    <span class="text-color-info">info</span>
-    <span class="text-color-light">light</span>
-    <span class="text-color-dark">dark</span>
-
-    <h3>Tags</h3>
-    <div class="mb-15">
-      <span class="tag tag-primary">primary</span>
-      <span class="tag tag-secondary">secondary</span>
-      <span class="tag tag-success">success</span>
-      <span class="tag tag-danger">danger</span>
-      <span class="tag tag-warning">warning</span>
-      <span class="tag tag-info">info</span>
-      <span class="tag tag-light">light</span>
-      <span class="tag tag-dark">dark</span>
-    </div>
-    <div>
-      <span class="tag tag-outline-primary">primary</span>
-      <span class="tag tag-outline-secondary">secondary</span>
-      <span class="tag tag-outline-success">success</span>
-      <span class="tag tag-outline-danger">danger</span>
-      <span class="tag tag-outline-warning">warning</span>
-      <span class="tag tag-outline-info">info</span>
-      <span class="tag tag-outline-light">light</span>
-      <span class="tag tag-outline-dark">dark</span>
-    </div>
-
-    <h3>Forms</h3>
-    <div class="forms-container forms-light m-15">
-      <h2 class="forms-title">Log in</h2>
-      <form data-turbo="false" class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8"
-        method="post"><input type="hidden" name="authenticity_token"
-          value="C561dP32vx9Jvx2XdqH9I9Pb3Bl6jirDRpb76h-ici9UQuq-iLnUYm97jxqvZl8KXEcOIVgI_t0GJ0Vy4y1SAg"
-          autocomplete="off" />
-        <div class="forms-element">
-          <label for="user_email">Email</label><br />
-          <input autofocus="autofocus" autocomplete="email" type="email" value="" name="user[email]" id="user_email" />
-        </div>
-
-        <div class="forms-element">
-          <label for="user_password">Password</label><br />
-          <input autocomplete="current-password" type="password" name="user[password]" id="user_password" />
-        </div>
-
-        <div class="forms-element">
-          <input name="user[remember_me]" type="hidden" value="0" autocomplete="off" /><input type="checkbox" value="1"
-            name="user[remember_me]" id="user_remember_me" />
-          <label for="user_remember_me">Remember me</label>
-        </div>
-
-        <div class="forms-submit">
-          <input type="submit" name="commit" value="Log in" class="btn btn-primary" data-disable-with="Log in" />
-        </div>
-      </form>
-      <div class="forms-links">
-        <a href="/users/sign_up">Sign up</a><br />
-        <a href="/users/password/new">Forgot your password?</a><br />
-        <a href="/users/confirmation/new">Didn&#39;t receive confirmation instructions?</a><br />
-        <a href="/users/unlock/new">Didn&#39;t receive unlock instructions?</a><br />
-      </div>
-    </div>
-
-    <div class="forms-container forms-dark m-15">
-      <h2 class="forms-title">Log in</h2>
-      <form data-turbo="false" class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8"
-        method="post"><input type="hidden" name="authenticity_token"
-          value="C561dP32vx9Jvx2XdqH9I9Pb3Bl6jirDRpb76h-ici9UQuq-iLnUYm97jxqvZl8KXEcOIVgI_t0GJ0Vy4y1SAg"
-          autocomplete="off" />
-        <div class="forms-element">
-          <label for="user_email">Email</label><br />
-          <input autofocus="autofocus" autocomplete="email" type="email" value="" name="user[email]" id="user_email" />
-        </div>
-
-        <div class="forms-element">
-          <label for="user_password">Password</label><br />
-          <input autocomplete="current-password" type="password" name="user[password]" id="user_password" />
-        </div>
-
-        <div class="forms-element">
-          <input name="user[remember_me]" type="hidden" value="0" autocomplete="off" /><input type="checkbox" value="1"
-            name="user[remember_me]" id="user_remember_me" />
-          <label for="user_remember_me">Remember me</label>
-        </div>
-
-        <div class="forms-submit">
-          <input type="submit" name="commit" value="Log in" class="btn btn-primary" data-disable-with="Log in" />
-        </div>
-      </form>
-      <div class="forms-links">
-        <a href="/users/sign_up">Sign up</a><br />
-        <a href="/users/password/new">Forgot your password?</a><br />
-        <a href="/users/confirmation/new">Didn&#39;t receive confirmation instructions?</a><br />
-        <a href="/users/unlock/new">Didn&#39;t receive unlock instructions?</a><br />
-      </div>
-    </div>
-
-  </div>
-
-  <script src="javascript/dropdown.js"></script>
-
-</body>
+    <script src="javascript/dropdown.js"></script>
+  </body>
 </html>
