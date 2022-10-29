@@ -38,16 +38,21 @@
         font-size: 2em;
         font-weight: 400;
         color: var(--secondary);
+        margin: 1em 0em;
       }
 
       h3 {
         font-size: 1.5em;
         color: var(--secondary);
         font-weight: 500;
+        margin: 1em 0em;
       }
 
       .container {
         margin-left: 10px;
+      }
+      .hidden {
+        display: none;
       }
     </style>
 
@@ -103,34 +108,6 @@
       </div>
       <hr style="color: lightgray" />
 
-      <h3>Navs</h3>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-        <li class="nav-item">
-          <div class="dropdown">
-            <p class="dropbtn">Menu 1 ▼</p>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <div class="dropdown-divider"></div>
-              <a href="#">Link 3</a>
-            </div>
-          </div>
-        </li>
-      </ul>
-      <hr style="color: lightgray" />
-
       <h3>Avatars</h3>
       <img src="assets/user1.png" alt="user1" class="avatar-small" />
       <img src="assets/user1.png" alt="user1" class="avatar-medium" />
@@ -148,18 +125,20 @@
             <button class="btn btn-secondary">Sign In</button>
             <button class="btn btn-primary">Sign Up</button>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn btn-burger-dark ml-5 mr-5">
-              <img src="assets/burger-dark.svg" />
-            </button>
-            <div class="dropdown-content dropdown-list-right">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <div class="dropdown-divider"></div>
-              <a href="#">Link 3</a>
-            </div>
+          <div>
+            <img
+              src="assets/burger-dark.svg"
+              alt="Burger button for mobile"
+              class="btn-burger"
+            />
           </div>
         </div>
+      </nav>
+      <nav class="burger-menu-content hidden">
+        <a href="#services">Mes Services</a>
+        <a href="#realisations">Mes réalisations</a>
+        <a href="#apropos">A Propos</a>
+        <a href="#contact">Contactez moi!</a>
       </nav>
 
       <h3>Navbar - Dark</h3>
@@ -173,18 +152,20 @@
             <button class="btn btn-secondary">Sign In</button>
             <button class="btn btn-primary">Sign Up</button>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn btn-burger-light ml-5 mr-5">
-              <img src="assets/burger-light.svg" />
-            </button>
-            <div class="dropdown-content dropdown-list-right">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <div class="dropdown-divider"></div>
-              <a href="#">Link 3</a>
-            </div>
+          <div>
+            <img
+              src="assets/burger-light.svg"
+              alt="Burger button for mobile"
+              class="btn-burger"
+            />
           </div>
         </div>
+      </nav>
+      <nav class="burger-menu-content hidden">
+        <a href="#services">Mes Services</a>
+        <a href="#realisations">Mes réalisations</a>
+        <a href="#apropos">A Propos</a>
+        <a href="#contact">Contactez moi!</a>
       </nav>
 
       <hr style="color: lightgray" />
@@ -458,5 +439,6 @@
     </div>
 
     <script src="javascript/dropdown.js"></script>
+    <script src="javascript/burger.js"></script>
   </body>
 </html>
